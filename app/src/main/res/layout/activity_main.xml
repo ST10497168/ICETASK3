@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E7E0E0"
+    android:backgroundTint="#A0A0A8"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="261dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="28dp"
+        android:text="Build Buddy"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/rdGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.096" />
+
+    <RadioGroup
+        android:id="@+id/rdGroup"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="205dp">
+
+        <RadioButton
+            android:id="@+id/btinstall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Install Door"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/btrepairs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Repair Shelf"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/btassamble"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Assemble Table"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvselect"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:text="Select Task"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <RadioButton
+            android:id="@+id/btwoodenplnk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wooden Planks"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/btscrew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Screws"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/btfastener"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fasteners"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvselectmat"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:text="Select Material"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/ethours"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Enter Hours"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btcalculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#1A1E8E"
+            android:text="Calcuate Cost" />
+
+        <TextView
+            android:id="@+id/tvcost"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:text="Cost"
+            android:textSize="24sp" />
+
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>
